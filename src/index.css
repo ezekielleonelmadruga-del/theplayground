@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #000000;
+  --color-black: #000000;
+  --color-paper: #ffffff;
+  --color-white: #ffffff;
+  --color-bone: #d8d4cc;
+  --color-fog: #8a8a8a;
+  --color-gravel: #2a2a2a;
+  --color-concrete: #1c1c1c;
+  --color-smoke: #141414;
+  --color-ash: #0a0a0a;
+  --color-blood: #930101;
+  --color-blood-bright: #c21a1a;
+
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Space Mono", "SFMono-Regular", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+    font-family: var(--font-display);
+    font-feature-settings: "kern";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--color-blood);
+    color: var(--color-paper);
+  }
+}
+
+/* Component classes live in the `components` layer so Tailwind utilities
+   (max-w-3xl, text-6xl, ...) still win when used alongside them. */
+@layer components {
+
+/* ---- layout ---- */
+
+.container-brut {
+  width: 100%;
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.grid-lines {
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--color-paper) 6%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--color-paper) 6%, transparent) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* ---- type ---- */
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-fog);
+}
+
+/* ---- buttons ---- */
+
+.btn-brut {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.95rem 1.6rem;
+  border: 2px solid var(--color-paper);
+  background: var(--color-paper);
+  color: var(--color-ink);
+  box-shadow: 6px 6px 0 var(--color-blood);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: transform 0.15s, background 0.15s, color 0.15s, box-shadow 0.15s;
+}
+
+.btn-brut:hover {
+  box-shadow: 9px 9px 0 var(--color-blood);
+  transform: translate(-2px, -2px);
+}
+
+.btn-brut:active {
+  box-shadow: 2px 2px 0 var(--color-blood);
+  transform: translate(3px, 3px);
+}
+
+.btn-ghost {
+  background: none;
+  border: 2px solid var(--color-paper);
+  color: var(--color-paper);
+  box-shadow: 6px 6px 0 var(--color-blood);
+}
+
+.btn-ghost:hover {
+  background: var(--color-blood);
+  border-color: var(--color-blood);
+}
+
+/* ---- cards ---- */
+
+.card-brut {
+  background: var(--color-smoke);
+  border: 2px solid var(--color-gravel);
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.card-brut:hover {
+  border-color: var(--color-blood);
+  box-shadow: 8px 8px 0 var(--color-blood);
+  transform: translate(-3px, -3px);
+}
+
+}
+
+/* ---- motion ---- */
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
