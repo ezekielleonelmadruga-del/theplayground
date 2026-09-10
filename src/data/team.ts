@@ -55,7 +55,7 @@ export const teams: TeamGroup[] = [
     blurb: "Designing the events, sessions, and founder experience.",
     members: [
       { name: "Jessica Lavender", role: "Director", photo: "jessicalavender.jpg" },
-      { name: "Kevin Valencia", role: "Coordinator", photo: null },
+      { name: "Kevin Valencia", role: "Coordinator", photo: "kevinvalencia.png" },
     ],
   },
   {
