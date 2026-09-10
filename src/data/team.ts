@@ -24,7 +24,6 @@ export const teams: TeamGroup[] = [
     blurb: "Partnerships, sponsors, and the world beyond campus.",
     members: [
       { name: "Shayan Mardaneh", role: "Director", photo: "shayanmardaneh.jpg" },
-      { name: "Kylie Armstrong", role: "Coordinator", photo: "kyliearmstrong.jpg" },
     ],
   },
   {
@@ -32,7 +31,6 @@ export const teams: TeamGroup[] = [
     blurb: "Building the bridges to capital and the people behind it.",
     members: [
       { name: "Jacqueline Seitz", role: "Director", photo: "jacquelineseitz.png" },
-      { name: "Liam Shea", role: "Coordinator", photo: "liamshea.png" },
       { name: "Emma Lefebvre", role: "Coordinator", photo: "emmalefebvre.png" },
     ],
   },
