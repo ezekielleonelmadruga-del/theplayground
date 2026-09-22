@@ -1,7 +1,7 @@
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import { site } from "@/data/site";
-import { founderTraits, hiringPackage, responsibilities } from "@/data/join";
+import { founderTraits, responsibilities } from "@/data/join";
 
 export default function Join() {
   return (
@@ -65,49 +65,25 @@ export default function Join() {
 
       <section className="container-brut py-20 md:py-28">
         <Reveal>
-          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-            <div>
-              <p className="eyebrow">The hiring package</p>
-              <h2 className="display mt-5 text-4xl md:text-5xl">Read the details.</h2>
-              <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-[var(--color-fog)]">
-                Everything about the roles, expectations, and how to get involved lives in our hiring
-                package. Read it below or open the full document.
-              </p>
-            </div>
-            <div className="flex flex-col gap-3">
-              <a href={hiringPackage} target="_blank" rel="noreferrer" className="btn-brut">
-                Open PDF
-              </a>
-              <a href={hiringPackage} download className="btn-brut btn-ghost">
-                Download
-              </a>
-            </div>
-          </div>
+          <p className="eyebrow">The hiring package</p>
+          <h2 className="display mt-5 text-4xl md:text-5xl">Coming soon.</h2>
+          <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-[var(--color-fog)]">
+            We're putting together the full breakdown of roles, expectations, and how to get
+            involved. It will live here as soon as it's ready.
+          </p>
         </Reveal>
 
         <Reveal delay={0.1}>
           <div
-            className="mt-12 border-2 border-[var(--color-gravel)] bg-[var(--color-smoke)]"
+            className="grid-lines mt-12 flex flex-col items-center justify-center gap-4 border-2 border-[var(--color-gravel)] bg-[var(--color-smoke)] p-16 text-center md:p-24"
             style={{ boxShadow: "10px 10px 0 var(--color-blood)" }}
           >
-            <object
-              data={`${hiringPackage}#view=FitH`}
-              type="application/pdf"
-              className="h-[80vh] w-full"
-              aria-label="The Playground hiring package"
-            >
-              <div className="p-10 text-center">
-                <p className="text-[var(--color-fog)]">Your browser can't display the PDF inline.</p>
-                <a
-                  href={hiringPackage}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn-brut mt-6"
-                >
-                  Open the hiring package
-                </a>
-              </div>
-            </object>
+            <span className="font-mono text-[0.7rem] uppercase tracking-[0.24em] text-[var(--color-blood-bright)]">
+              Hiring package coming soon
+            </span>
+            <span className="display text-2xl text-[var(--color-fog)] md:text-3xl">
+              The Playground hiring package
+            </span>
           </div>
         </Reveal>
       </section>

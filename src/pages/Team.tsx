@@ -10,7 +10,7 @@ export default function Team() {
         index="03"
         eyebrow="The Team"
         title="The people behind the Playground."
-        intro="Nine teams, one mission. These are the students who run The Playground, organized by the part of the machine they drive."
+        intro="Eight teams, one mission. These are the students who run The Playground, organized by the part of the machine they drive."
       />
 
       <TeamGrid />

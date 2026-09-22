@@ -1,6 +1,6 @@
 export const stats = [
   { value: "1", label: "Incubator, one mission" },
-  { value: "9", label: "Teams driving the org" },
+  { value: "8", label: "Teams driving the org" },
   { value: "∞", label: "Ventures worth backing" },
 ];
 

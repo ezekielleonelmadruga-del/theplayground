@@ -23,5 +23,3 @@ export const responsibilities = [
   "Represent The Playground and its founders with integrity on and off campus.",
   "Ask for help early, share wins openly, and dissect losses honestly.",
 ];
-
-export const hiringPackage = "/docs/playground-hiring-package.pdf";

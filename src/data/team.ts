@@ -20,18 +20,11 @@ export const teams: TeamGroup[] = [
     ],
   },
   {
-    name: "External Relations",
-    blurb: "Partnerships, sponsors, and the world beyond campus.",
-    members: [
-      { name: "Shayan Mardaneh", role: "Director", photo: "shayanmardaneh.jpg" },
-    ],
-  },
-  {
     name: "Investor Relations",
     blurb: "Building the bridges to capital and the people behind it.",
     members: [
-      { name: "Jacqueline Seitz", role: "Director", photo: "jacquelineseitz.png" },
-      { name: "Emma Lefebvre", role: "Coordinator", photo: "emmalefebvre.png" },
+      { name: "Emma Lefebvre", role: "Head of Investor Relations", photo: "emmalefebvre.png" },
+      { name: "Jacqueline Seitz", role: "Senior Advisor", photo: "jacquelineseitz.png" },
     ],
   },
   {
